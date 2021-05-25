@@ -34,7 +34,7 @@ public class EmployeeResource {
         return new ResponseEntity<>(employeeService.addEmployee(employee), HttpStatus.CREATED);
     }
 
-    @PutMapping("/save")
+    @PutMapping("/update")
     public ResponseEntity<Employee> updateEmployee(@RequestBody Employee employee) {
         return new ResponseEntity<>(employeeService.updateEmployee(employee), HttpStatus.OK);
     }
